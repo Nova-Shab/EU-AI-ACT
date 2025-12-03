@@ -15,6 +15,7 @@ interface AuditHistoryAttributes {
     oldValue?: any;
     newValue?: any;
     description?: string;
+    [key: string]: any;
   };
   ipAddress?: string;
   createdAt?: Date;
@@ -34,6 +35,7 @@ class AuditHistory extends Model<AuditHistoryAttributes, AuditHistoryCreationAtt
     oldValue?: any;
     newValue?: any;
     description?: string;
+    [key: string]: any;
   };
   public ipAddress?: string;
 
